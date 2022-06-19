@@ -5,6 +5,7 @@ red='\e[1;31m'
 blue='\e[1;34m'
 white='\e[1;35m'
 yellow='\e[1;33m'
+
 echo -e $blue "===================";
 echo -e $blue "== Hola que hace ==";
 echo -e $blue "==    Dox-Web    ==";
@@ -40,7 +41,7 @@ echo "Mi IP publica es: $ip"
 echo
 echo -e $blue
 read -p "Presione ENTER para volver atras" enter
-bash info.sh
+bash DoxWeb.sh
 fi
 if [ $ipp = 2 ]
 then
@@ -50,7 +51,7 @@ curl http://ip-api.com/$ip
 echo
 echo -e $blue
 read -p "Presione ENTER para volver atras" enter
-bash info.sh
+bash DoxWeb.sh
 fi
 if [ $ipp = 3 ]
 then
@@ -60,7 +61,7 @@ curl https://api.hackertarget.com/mtr/?q=$site
 echo
 echo -e $blue
 read -p "Presione ENTER para volver atras" enter
-bash info.sh
+bash DoxWeb.sh
 fi
 if [ $ipp = 4 ]
 then
@@ -70,7 +71,7 @@ curl http://api.hackertarget.com/nmap/?q=$port
 echo
 echo -e $blue
 read -p "Presione ENTER para volver atras" enter
-bash info.sh
+bash DoxWeb.sh
 fi
 
 if [ $ipp = 5 ]
@@ -82,7 +83,7 @@ echo "The host is: $s"
 echo
 echo -e $blue
 read -p "Presione ENTER para volver atras" enter
-bash info.sh
+bash DoxWeb.sh
 fi
 if [ $ipp = 6 ]
 then
@@ -95,7 +96,7 @@ echo -e $blue
 echo
 echo
 read -p "Presione ENTER para volver atras" enter
-bash info.sh
+bash DoxWeb.sh
 fi
 if [ $ipp = 7 ]
 then
@@ -106,7 +107,7 @@ curl https://api.hackertarget.com/pagelinks/?q=$df
 echo
 echo -e $blue
 read -p "Presione ENTER para volver atras" enter
-bash info.sh
+bash DoxWeb.sh
 fi
 if [ $ipp = 0 ]
 then
@@ -117,8 +118,7 @@ echo
 echo
 echo
 echo -e $green "                      HAPPY HACKING"                  
-echo -e $green "  $red Snow woman coming now, snow woman from blizzard
-                   Snow woman coming along, from the hades of ice and snow "
+echo -e $green "  $red Snow woman coming now, snow woman from blizzard "
 echo -e $green "                 $red -Sia Snowman"
 echo
 echo
@@ -126,5 +126,5 @@ echo
 echo
 exit
 else
-bash info.sh
+bash DoxWeb.sh
 fi
